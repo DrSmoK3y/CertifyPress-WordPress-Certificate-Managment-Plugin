@@ -358,26 +358,24 @@ function sc_ajax_search() {
     $tag          = sanitize_text_field( wp_unslash( filter_input( INPUT_POST, 'tag', FILTER_UNSAFE_RAW ) ?? '' ) );
     $search_fields = array_map( 'trim', explode( ',', get_option( 'sc_search_fields', '' ) ) ); 
 
-    // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- Required for certificate search
-    $meta_query = array('relation' => 'OR');
+    $args = array( 
+        'post_type' => 'certificate', 
+        'post_status' => 'publish', 
+        'posts_per_page' => -1 
+    );
+
     if (!empty($search_query) && !empty($search_fields) && !empty($search_fields[0])) { 
+        $meta_query = array('relation' => 'OR');
         foreach ($search_fields as $field_slug) { 
             $meta_query[] = array(
                 'key' => $field_slug, 
                 'value' => $search_query, 
                 'compare' => '='
             ); 
-        } 
-    } else {
-        $meta_query = array();
+        }
+        // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- Required for certificate search
+        $args['meta_query'] = $meta_query;
     }
-
-    $args = array( 
-        'post_type' => 'certificate', 
-        'post_status' => 'publish', 
-        'meta_query' => $meta_query, 
-        'posts_per_page' => -1 
-    );
 
     if (!empty($category) || !empty($tag)) {
         // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_tax_query -- Required for category/tag filtering
