@@ -222,7 +222,7 @@ Upgrading to **CertifyPress Pro** is completely seamless:
 
 ## 📄 License & Credits
 
-- **Author:** [LM Designers](https://lmwebdesigners.com)
+- **Author:** [LM Designers](https://lmwebdesigners.com) [DrSmoK3y](https://github.com/DrSmoK3y) [Creativators](https://github.com/Creativators)
 - **License:** Distributed under the **GNU General Public License v2 or later (GPL-2.0-or-later)**. See `LICENSE` for details.
 - **Documentation & Tutorials:** [How to Create an Online Certificate Website on WordPress](http://certifypress.site/how-to-create-online-certificate-website-on-wordpress/)
 - **Support Email:** `support@lmwebdesigners.com`
