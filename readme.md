@@ -215,7 +215,7 @@ Upgrading to **CertifyPress Pro** is completely seamless:
 - **100% Zero Data Loss:** Pro shares the exact same database architecture, post types (`lmc_certificate`), taxonomies, and custom field meta keys.
 - **Instant Activation:** Deactivate the Free version, activate Pro, and your existing certificates instantly gain QR code verification, vector PDF downloads, and Elementor template rendering.
 
-🔗 [Explore CertifyPress Pro Features & Pricing](https://lmwebdesigners.com/plugin/lm-certificates-publisher/)
+🔗 [Explore CertifyPress Pro Features & Pricing](http://certifypress.site/)
 
 ---
 
@@ -224,5 +224,5 @@ Upgrading to **CertifyPress Pro** is completely seamless:
 
 - **Author:** [LM Designers](https://lmwebdesigners.com)
 - **License:** Distributed under the **GNU General Public License v2 or later (GPL-2.0-or-later)**. See `LICENSE` for details.
-- **Documentation & Tutorials:** [How to Create an Online Certificate Website on WordPress](https://lmwebdesigners.com/how-to-create-online-certificate-website-on-wordpress/)
+- **Documentation & Tutorials:** [How to Create an Online Certificate Website on WordPress](http://certifypress.site/how-to-create-online-certificate-website-on-wordpress/)
 - **Support Email:** `support@lmwebdesigners.com`
