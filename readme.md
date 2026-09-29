@@ -162,7 +162,7 @@ Embed the verification portal anywhere using these flexible WordPress shortcodes
 ### Option C: Via Git
 ```bash
 cd wp-content/plugins/
-git clone https://github.com/DrSmoK3y/CertifyPress-Lite/tree/version-1.1.1.git
+git clone https://github.com/DrSmoK3y/CertifyPress-Lite.git
 ```
 
 ---
