@@ -1,4 +1,4 @@
-# LM Certificate Publisher (CertifyPress Free) 🎓📜
+# LM Certificate Publisher (CertifyPress Free)
 
 [![WordPress Version](https://img.shields.io/badge/WordPress-5.8%2B-blue.svg?logo=wordpress&logoColor=white)](https://wordpress.org)
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%20to%208.3%2B-777BB4.svg?logo=php&logoColor=white)](https://php.net)
