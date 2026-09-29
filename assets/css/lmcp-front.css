@@ -1,0 +1,289 @@
+/* ========================================================================
+   Frontend CSS For LM Certificate Publisher (Free Edition)
+   Unified Design & Styling Engine Supporting Horizontal and Vertical Templates
+   ======================================================================== */
+
+:root {
+    --lmcp-btn-bg: #14bda9;
+    --lmcp-btn-text: #ffffff;
+    --lmcp-btn-hover: #0ea391;
+    --lmcp-btn-radius: 6px;
+    --lmcp-form-bg: #f8fafc;
+    --lmcp-form-border: #e2e8f0;
+    --lmcp-form-radius: 8px;
+    --lmcp-card-bg: #ffffff;
+    --lmcp-card-border: #e2e8f0;
+    --lmcp-card-radius: 8px;
+}
+
+.lmcp-search-form { 
+    max-width: 820px; 
+    margin: 24px auto; 
+    padding: 24px; 
+    background: var(--lmcp-form-bg, #f8fafc); 
+    border: 1px solid var(--lmcp-form-border, #e2e8f0);
+    border-radius: var(--lmcp-form-radius, 8px); 
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04); 
+    box-sizing: border-box;
+} 
+
+.lmcp-search-input-group, 
+.lmcp-search-select-group, 
+.lmcp-search-btn-group { 
+    margin-bottom: 16px; 
+} 
+
+.lmcp-search-form input[type="text"], 
+.lmcp-search-form select { 
+    width: 100%; 
+    height: 42px;
+    padding: 8px 14px;
+    border: 1px solid #cbd5e1; 
+    border-radius: var(--lmcp-btn-radius, 6px); 
+    box-sizing: border-box; 
+    font-size: 14px;
+    background: #fff;
+    color: #1e293b;
+    transition: all 0.2s ease;
+} 
+
+.lmcp-search-form input[type="text"]::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+.lmcp-search-form select option[value=""] {
+    color: #64748b;
+    font-style: normal;
+}
+
+.lmcp-search-form input[type="text"]:focus, 
+.lmcp-search-form select:focus {
+    border-color: var(--lmcp-btn-bg, #14bda9);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(20, 189, 169, 0.15);
+}
+
+.lmcp-search-form label,
+.lmcp-search-form .lmcp-field-label { 
+    display: block; 
+    margin-bottom: 6px; 
+    font-weight: 600; 
+    font-size: 13.5px;
+    color: #0f172a;
+    line-height: 1.4;
+} 
+
+.lmcp-search-select-group { 
+    display: flex; 
+    gap: 16px; 
+    flex-wrap: wrap;
+} 
+
+.lmcp-search-select-group .lmcp-select { 
+    flex: 1; 
+    min-width: 180px;
+} 
+
+.lmcp-search-btn-group { 
+    display: flex; 
+    gap: 12px; 
+    flex-wrap: wrap;
+} 
+
+.lmcp-search-btn-group button { 
+    flex: 1; 
+    min-width: 120px;
+    height: 42px;
+    padding: 0 20px; 
+    border: 1px solid transparent; 
+    border-radius: var(--lmcp-btn-radius, 6px); 
+    background: var(--lmcp-btn-bg, #14bda9); 
+    color: var(--lmcp-btn-text, #ffffff) !important; 
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer; 
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+} 
+
+.lmcp-search-btn-group button:hover { 
+    background: var(--lmcp-btn-hover, #0ea391); 
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+} 
+
+button#lmcp-print-btn { 
+    background: #ffffff;
+    color: #334155 !important;
+    border: 1px solid #cbd5e1;
+}
+
+button#lmcp-print-btn:hover { 
+    background: #f1f5f9;
+    color: #0f172a !important;
+    border-color: #94a3b8;
+}
+
+/* ========================================================================
+   Template 1: Classic Horizontal Table Layout
+   ======================================================================== */
+.lmcp-cert-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+    background: var(--lmcp-card-bg, #ffffff);
+    border: 1px solid var(--lmcp-card-border, #e2e8f0);
+    border-radius: var(--lmcp-card-radius, 8px);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+} 
+
+.lmcp-cert-table th, 
+.lmcp-cert-table td { 
+    border: 1px solid var(--lmcp-card-border, #e2e8f0); 
+    padding: 12px 16px; 
+    text-align: left;
+    box-sizing: border-box;
+} 
+
+.lmcp-cert-table thead th { 
+    background: #f8fafc; 
+    font-weight: 700; 
+    font-size: 16px;
+    color: #0f172a;
+    border-bottom: 2px solid var(--lmcp-card-border, #e2e8f0);
+} 
+
+.lmcp-cert-table tbody td:first-child { 
+    width: 32%;
+    background: #fafbfc;
+    color: #475569;
+    font-weight: 600;
+} 
+
+.lmcp-cert-table tbody td:last-child { 
+    color: #1e293b;
+}
+
+/* ========================================================================
+   Template 2: Modern Vertical / Stacked Cards Layout (NEW)
+   ======================================================================== */
+.lmcp-cert-card.lmcp-cert-vertical-template {
+    background: var(--lmcp-card-bg, #ffffff);
+    border: 1px solid var(--lmcp-card-border, #e2e8f0);
+    border-radius: var(--lmcp-card-radius, 8px);
+    margin-bottom: 24px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+    box-sizing: border-box;
+}
+
+.lmcp-cert-vertical-header {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-bottom: 1px solid var(--lmcp-card-border, #e2e8f0);
+    padding: 18px 24px;
+}
+
+.lmcp-cert-vertical-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: var(--lmcp-btn-bg, #14bda9);
+    color: var(--lmcp-btn-text, #ffffff);
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.lmcp-cert-vertical-title {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.35;
+}
+
+.lmcp-cert-vertical-body {
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.lmcp-cert-field-vertical {
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 14px;
+}
+
+.lmcp-cert-field-vertical:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.lmcp-cert-label-vertical {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #64748b;
+    margin-bottom: 5px;
+}
+
+.lmcp-cert-value-vertical {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+/* Download / Action Buttons */
+.lmcp-download-btn { 
+    display: inline-flex; 
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px; 
+    background: var(--lmcp-btn-bg, #14bda9); 
+    color: var(--lmcp-btn-text, #ffffff) !important; 
+    text-decoration: none !important; 
+    border-radius: var(--lmcp-btn-radius, 6px); 
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.2s ease; 
+}
+
+.lmcp-download-btn:hover { 
+    background: var(--lmcp-btn-hover, #0ea391); 
+    color: var(--lmcp-btn-text, #ffffff) !important; 
+    box-shadow: 0 4px 12px rgba(20, 189, 169, 0.25);
+    transform: translateY(-1px);
+}
+
+/* ========================================================================
+   Print Stylesheet
+   ======================================================================== */
+@media print {
+    .lmcp-search-input-group,
+    .lmcp-search-select-group,
+    .lmcp-search-btn-group,
+    .lmcp-social-share-wrap {
+        display: none !important;
+    }
+    .lmcp-search-form {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+    .lmcp-cert-table,
+    .lmcp-cert-card.lmcp-cert-vertical-template {
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+        page-break-inside: avoid;
+    }
+}
